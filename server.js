@@ -16,19 +16,16 @@ app.use(Express.json());
 app.use(Cors());
 
 var jwtCheck = jwt({
-   secret: jwks.expressJwtSecret({
-      cache: true,
-      rateLimit: true,
-      jwksRequestsPerMinute: 5,
-      jwksUri: 'https://sistemaventas.us.auth0.com/.well-known/jwks.json'
-   }),
- audience: 'api-sistemadeventas-napster',
- issuer: 'https://sistemaventas.us.auth0.com/',
- algorithms: ['RS256']
+      secret: jwks.expressJwtSecret({
+         cache: true,
+         rateLimit: true,
+         jwksRequestsPerMinute: 5,
+         jwksUri: 'https://sistemaventas.us.auth0.com/.well-known/jwks.json'
+      }),
+   audience: 'api-sistemadeventas-napster',
+   issuer: 'https://sistemaventas.us.auth0.com/',
+   algorithms: ['RS256']
 });
-
-app.use(jwtCheck);
-
 
 app.use(jwtCheck);
 
