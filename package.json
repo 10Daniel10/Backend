@@ -7,7 +7,9 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test:e2e":"npm run test",
+    "test:e2e:build":"npm run build"
   },
   "engines":{
     "node": "14.x"
