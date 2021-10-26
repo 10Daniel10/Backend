@@ -10,7 +10,7 @@
     "start": "node server.js"
   },
   "engine": {
-    "node": "14.17.6",
+    "node": "14.x",
     "npm":"1.4.x",
     "yarn": "1.19.1"
   },
