@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node server.js"
   },
-  "engine": {
+  "engines": {
     "node": "14.x"
   },
   "dependencies": {
