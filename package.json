@@ -12,7 +12,8 @@
     "test:e2e:build": "npm run build"
   },
   "engine": {
-    "node": "14.x"
+    "node": "14.x",
+    "npm":"1.4.x"
   },
   "dependencies": {
     "base-64": "^1.0.0",
