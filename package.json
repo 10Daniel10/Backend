@@ -1,7 +1,7 @@
 {
   "name": "BackEnd",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "ingit adex.js",
   "repository": "https://github.com/10Daniel10/Backend.git",
   "author": "DavidRamirez20 <alejoramirezrios@gmail.com>",
   "license": "MIT",
@@ -15,6 +15,7 @@
     "node": "14.x"
   },
   "dependencies": {
+    "base-64": "^1.0.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
