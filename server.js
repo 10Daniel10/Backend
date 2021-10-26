@@ -8,6 +8,8 @@ import rutasProducto from './views/productos/routes.js';
 import rutasUsuario from './views/usuarios/routes.js';
 import rutasVenta from './views/ventas/routes.js';
 
+const port = process.env.PORT || 5000
+
 dotenv.config({path:'./.env'});
 
 const app = Express();
@@ -34,8 +36,8 @@ app.use(rutasVenta);
 app.use(rutasProducto);
 
 const main = () => {
-   return app.listen(process.env.PORT, () => {
-      console.log(`Esuchando puerto ${process.env.PORT}`);
+   return app.listen(port, () => {
+      console.log(`Esuchando puerto ${port}`);
    });
 };
 
