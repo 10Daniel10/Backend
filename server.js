@@ -8,10 +8,10 @@ import rutasProducto from './views/productos/routes.js';
 import rutasUsuario from './views/usuarios/routes.js';
 import rutasVenta from './views/ventas/routes.js';
 
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 5050
 
 dotenv.config({path:'./.env'});
-
+g
 const app = Express();
 
 app.use(Express.json());
